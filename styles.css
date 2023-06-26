@@ -28,10 +28,12 @@ header > button {
 	position: relative;
 	top: 0;
 	left: 0;
-	width: 25vw;
-	height: 100%;
+	width: 20vw;
+	height: 0;
 	background-color: rgba(24, 24, 83, 0.863);
 	color: whitesmoke;
+	opacity: 0;
+	transition: all 0.5s;
 }
 
 .dropdown-menu > ul {
@@ -50,4 +52,9 @@ header > button {
 
 .dropdown-menu > ul > li:hover {
 	transform: scale(1.15);
+}
+
+.visible {
+	opacity: 1;
+	height: 100%;
 }
